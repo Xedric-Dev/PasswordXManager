@@ -105,12 +105,16 @@ public class AddCredentialController {
     public void handleCancel(ActionEvent actionEvent) {
 
         homeController.setCredentialToEdit(null);
+        isEditing = false;
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
 
     }
 
     private void setOnCloseClean(Stage stage){
-        stage.setOnCloseRequest(event -> homeController.setCredentialToEdit(null));
+        stage.setOnCloseRequest(event -> {
+            isEditing = false;
+            homeController.setCredentialToEdit(null);
+        });
     }
 }
