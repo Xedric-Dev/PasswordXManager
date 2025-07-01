@@ -1,0 +1,22 @@
+.btn-login{
+    -fx-background-color : -color-accent-muted;
+    -fx-font-size : 18px;
+    -fx-text-fill : -color-fg-default;
+}
+
+.sub-text-area{
+    -fx-font-size : 15px;
+    -fx-text-fill : -color-fg-default;
+    -fx-background-color : transparent;
+    -fx-border-color : transparent;
+    -fx-alignment: center;
+}
+
+.sub-text-area .content{
+    -fx-padding: 0;
+    -fx-alignment: center;
+}
+
+.sub-text-area .text {
+    -fx-text-alignment: center;
+}

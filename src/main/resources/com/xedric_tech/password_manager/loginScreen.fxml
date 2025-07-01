@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import atlantafx.base.controls.ToggleSwitch?>
+<?import javafx.scene.control.TextArea?>
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="700.0" spacing="15.0" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xedric_tech.password_manager.controllers.LoginController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-1" text="Welcome To Password Manager App" />
+      <TextArea fx:id="subText" editable="false" wrapText="true" text="Insert your passwords to Login" styleClass="sub-text-area" maxHeight="100"/>
+      <Pane prefHeight="30.0" prefWidth="670.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Archive Password" />
+      <PasswordField fx:id="storeKeyPass" maxWidth="300.0" styleClass="rounded" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-3" text="Access Key" />
+      <PasswordField fx:id="keyPass" maxWidth="300.0" styleClass="rounded" />
+      <ToggleSwitch text="Show Passwords" fx:id="showPassToggle" />
+      <Button fx:id="loginButton" defaultButton="true" onAction="#login" prefHeight="42.0" prefWidth="144.0" text="Login">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <styleClass>
+            <String fx:value="large" />
+            <String fx:value="text-bold" />
+            <String fx:value="rounded" />
+            <String fx:value="btn-login" />
+         </styleClass>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>
