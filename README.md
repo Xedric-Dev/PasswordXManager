@@ -8,8 +8,8 @@ PasswordXManager is a project based on JavaFX + Springboot with an embedded H2 D
 
 ## Index
 
-- [Descrizione](#descrizione)  
-- [Funzionalità](#funzionalità)  
+- [Descrizione](#description)  
+- [Funzionalità](#functionality)  
 - [Screenshot](#screenshot)  
 
 ---
